@@ -104,7 +104,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get install libssl-dev python-unittest2
-          sudo pip install urllib3[secure] autobahntestsuite
+          sudo pip install autobahntestsuite
 
       - name: Build Autobahn TestSuite for client
         run: cargo build --release --features async-std-runtime --example autobahn-client
